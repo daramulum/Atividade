@@ -1,0 +1,27 @@
+Quest 1:
+colocar o modificador de acesso da variável/método como protected ou privacy.
+
+Quest 2:
+Após deixar os atributos da classe Conta com acesso restrito (privado), é impossível acessá-los diretamente de fora da classe. Isso significa que, na classe TestaConta, não é possível ler ou modificar os atributos da conta criada.
+Para acessar os atributos privados da classe Conta, é necessário criar métodos públicos (getters e setters) que permitam a leitura e a modificação desses atributos. Dessa forma, é possível criar uma Conta na classe TestaConta e manipular seus atributos por meio dos métodos públicos criados.
+
+Quest 3:
+Para isso, você pode seguir os seguintes passos:
+Crie os métodos getters e setters para cada atributo que deseja acessar ou modificar.
+Os métodos getters devem retornar o valor do atributo, enquanto os métodos setters devem receber um novo valor como argumento e atualizar o valor do atributo correspondente.
+Modifique as classes que acessam e modificam os atributos da Conta para utilizar os novos métodos getters e setters.
+
+Quest 4:
+para que possa receber, opcionalmente, o nome do titular da conta durante a criação do objeto, você pode definir o construtor da classe com um parâmetro adicional para o nome do titular. O construtor é um método especial chamado __init__ e deve ser definido com o parâmetro obrigatório self e um parâmetro adicional para o nome do titular.
+
+Quest 5:
+Para criar um identificador único para cada instância da classe Conta, você pode usar uma variável estática que é incrementada toda vez que uma nova instância é criada.
+
+Quest 6:
+ Para que 31/2/2021 não sejam aceitas pela sua classe Data, você pode usar a biblioteca datetime do. A classe datetime fornece uma função chamada strptime() que pode ser usada para analisar uma string de data e hora em um objeto datetime.
+Você pode usar o método strptime() para analisar a string de data e hora e, em seguida, verificar se a data é válida ou não.
+
+Quest 7:
+Para garantir que uma instância da classe Pessoa Fisica não seja criada sem um CPF inicial, podemos criar um construtor que recebe o CPF como parâmetro e atribui o valor recebido ao atributo CPF da classe. Dessa forma, a criação de uma instância da classe PessoaFisica sem CPF inicial seria impossível.
+Para garantir que uma pessoa física não tenha um CPF inválido, podemos criar um método que valida o CPF e lançar uma exceção caso o CPF seja inválido. O método validaCPF pode ser implementado utilizando o algoritmo de validação de CPF existente.
+
